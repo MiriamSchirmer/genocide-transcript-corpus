@@ -2,11 +2,33 @@
 
 The Genocide Transcript Corpus (GTC) provides transcript data from three different genocide tribunals: the Extraordinary Chambers in the Courts of Cambodia (ECCC), the International Criminal Tribunal for Rwanda (ICTR), and the International Criminal Tribunal for the Former Yugoslavia (ICTY). 
 
+**GTC Version 2 - June 2023**
+
+Besides meta data regarding the respective tribunal and transcript annotation this version also includes the annotation of text segments that inlude potentially traumatic witness experiences.
+
+The updated version of the GTC contains 52,845 text segments of a total of 90 transcripts that can be attributed to an individual person or court proceedings. The final data set includes the following variables:
+• Case information: tribunal, case number, accused
+• Transcript information: document ID, url-link to the original
+transcript, date
+• Witness information: witness name or pseudonym, number
+of witnesses per transcript
+• Text information: speaker (e.g., Witness, LawyerQA), text,
+trauma label
+• Annotation information: annotation ID, start ID, and document
+ID
+
+Please refer to the corresponding paper for further information on the labeling process:
+Miriam Schirmer, Isaac Misael Olguín Nolasco, Edoardo Mosca, Shanshan Xu, and Jürgen Pfeffer. 2023. Uncovering Trauma in Genocide Tribunals: An NLP Approach Using the Genocide Transcript Corpus. In Nineteenth International Conference on Artificial Intelligence and Law (ICAIL 2023), June 19–23, 2023, Braga, Portugal. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3594536.3595147
+
+
+
+**GTC Version 1 - June 2022**
+
 All  samples  were  labeled  according  to  whether  they contain a witness’s description of experienced violence. Violence in this context includes accounts of experienced torture, interrogation, death, beating, psychological violence, experienced military attacks, destruction of villages, and looting. 
 
 The transcript data was divided into equally large text chunks of 250 words each. Numbers  and  punctuation  were  removed.
 
-*Codebook*
+*Codebook V1*
 
 | Variable Name  | Description |
 | ------------- | ------------- |
