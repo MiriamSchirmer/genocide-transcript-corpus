@@ -22,13 +22,22 @@ ID
 
 | Variable Name  | Description |
 | ------------- | ------------- |
-| paragrah | A text passage from a genocide tribunal transcript (250 words each). |
-| trauma | Potentially trauma-related content: <br> <ul> <li>not containing trauma-related content = 0</li> <li>containing trauma-related content = 1</li> </ul> |
 | tribunal  | Name of the tribunal (ICTY, ICTR, or ECCC)|
-| witness | The witness's name or a pseudonym. |
-| document | The document number / ID. |
-| case | The case number / ID. |
-| date | The trial date. |
+| id_transcript | Document/transcript number/ID |
+| case | Case number/ID |
+| accused | Name of the accused |
+| date | Date of the respective trial day corresponding to the transcript|
+| text | Transcript segment separated by speaker |
+| trauma | Potentially trauma-related content: <br> <ul> <li>not containing trauma-related content = 0</li> <li>containing trauma-related content = 1</li> </ul> |
+| role | Legal role of the person speaking: <br> <ul> <li>Witness</li> <li>Accused</li> <li>JudgeProc (Judge talking about procedural matters)</li> <li>JudgeQA (Judge examining a witness</li> <li>LawyerProc (Lawyer talking about procedural matters)</li> <li>LawyerQA (Lawyer examining a witness</li> <li>Proceedings (procedural matters)</li> </ul>|
+| witnesses | Names or pseudonyms of witnesses |
+| n_witnesses | Number of witnesses examined in the hearing|
+| start | Starting point of the respective segment annotation (useful for ordering the data chronologically) |
+| id_annotation | Annotation ID of the segment |
+| id_document | Document ID in reference to the annotation process |
+| url| Link to transcript |
+
+
 
 
 
@@ -57,4 +66,4 @@ The transcript data was divided into equally large text chunks of 250 words each
 | date | The trial date. |
 
 
-All of the used transcripts are openly accessible on the respective courts' websites.
+**General Note:** All of the used transcripts are openly accessible on the respective courts' websites.
